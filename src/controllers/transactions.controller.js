@@ -75,7 +75,7 @@ export async function getTransactionsByToken(req, res) {
 
     const response = {
       ...user,
-      transactions
+      transactions: transactions.slice(0).reverse()
     };
 
     return res.status(200).send(response);

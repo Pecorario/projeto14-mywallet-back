@@ -19,8 +19,7 @@ export function validateTransaction(transaction) {
 
     const validation = transaction.validate(
       { value, description, type },
-      { convert: false },
-      { abortEarly: false }
+      { convert: false, abortEarly: false }
     );
 
     if (validation.error) {
