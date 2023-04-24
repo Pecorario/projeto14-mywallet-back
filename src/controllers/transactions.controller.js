@@ -31,7 +31,7 @@ export async function addTransaction(req, res) {
       type,
       value,
       description,
-      date: dayjs().format('DD/MM/YYYY')
+      date: dayjs().format('DD/MM')
     });
 
     return res.sendStatus(201);
