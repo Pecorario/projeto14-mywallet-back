@@ -3,8 +3,8 @@ import dayjs from 'dayjs';
 
 export async function addTransaction(req, res) {
   const { value, description } = req.body;
-  const { type } = req.params;
   const { authorization } = req.headers;
+  const { type } = req.params;
 
   const token = authorization?.replace('Bearer ', '');
 
